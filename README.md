@@ -1,6 +1,6 @@
 ## API
 
-### listForum() - list all forums
+### listForums() - list all forums
 
 #### Response
 
