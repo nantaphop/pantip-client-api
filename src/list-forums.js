@@ -1,6 +1,6 @@
-const http = require("./http");
+import http from "./http"
 
-module.exports = async function listForums() {
+export default async function listForums() {
   const $ = await http.document("");
   return $(".timeline-room .submenu-room-list .submenu-room-item > a")
     .map((i, ele) => ({

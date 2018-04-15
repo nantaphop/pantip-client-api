@@ -1,5 +1,5 @@
-const {expect} = require('chai')
-const listForums = require('./list-forums')
+import {expect} from 'chai'
+import listForums from './list-forums'
 
 describe('list forum', () => {
     it('should able to list all forum ', async () => {
