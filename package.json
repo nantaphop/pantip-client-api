@@ -1,0 +1,34 @@
+{
+  "name": "pantip-client-api",
+  "version": "1.0.0",
+  "description": "Unofficial Pantip.com Client API for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nantaphop/pantip-client-api.git"
+  },
+  "keywords": [
+    "pantip",
+    "client",
+    "api"
+  ],
+  "author": "Nantaphop Phuengphae <nantaphop.p@gmail.com> (https://nantaphop.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nantaphop/pantip-client-api/issues"
+  },
+  "homepage": "https://github.com/nantaphop/pantip-client-api#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3"
+  }
+}
