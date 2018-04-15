@@ -1,5 +1,6 @@
-const fetch = require('node-fetch')
-const cheerio = require('cheerio')
+import fetch from 'node-fetch'
+import cheerio from 'cheerio'
+import qs from 'qs'
 
 const ENDPOINT = 'https://pantip.com/'
 
@@ -21,9 +22,11 @@ function get(path){
 	.then(res => res.json())
 }
 
-function post(path){
+function post(path, body){
     return fetch(`${ENDPOINT}${path}`, {
+        method: 'POST',
         headers: getHeaders(),
+        body: qs.stringify(body)
     })
 	.then(res => res.json())
 }
@@ -36,4 +39,5 @@ async function document(path){
 module.exports = {
     document,
     get,
+    post
 }

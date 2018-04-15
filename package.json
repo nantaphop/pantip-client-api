@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "prepublish": "npm run build",
+    "postpublish": "git push origin master --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
   "homepage": "https://github.com/nantaphop/pantip-client-api#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "node-fetch": "^2.1.2"
+    "node-fetch": "^2.1.2",
+    "qs": "^6.5.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
